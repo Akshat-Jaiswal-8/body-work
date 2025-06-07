@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
-    "types": [
-      "vite/client"
-    ],
+    "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
+    "typeRoots": ["./node_modules/@types/", "./types", "./node_modules"],
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -29,9 +26,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src",
-    "types.d.ts"
-  ],
+  "include": ["src", "types.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

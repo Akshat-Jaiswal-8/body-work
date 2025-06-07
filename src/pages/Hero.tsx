@@ -39,7 +39,7 @@ function Hero(): React.ReactNode {
                 yourself harder{" "}
               </span>
               to become better
-              <span className="inline-block overflow-hidden rounded-2xl xs:mt-4 xs:h-12 xs:w-[12rem] sm:ml-4 sm:h-14 sm:w-[16rem] md:mt-2 md:w-[16rem] lg:w-[20rem] xl:ml-4 xl:h-16">
+              <span className="inline-block overflow-hidden rounded-2xl xs:mt-4 xs:h-12 xs:w-48 sm:ml-4 sm:h-14 sm:w-[16rem] md:mt-2 md:w-[16rem] lg:w-80 xl:ml-4 xl:h-16">
                 <motion.img
                   initial={{ scale: 1.25 }}
                   animate={{ scale: 1 }}
@@ -88,11 +88,11 @@ function Hero(): React.ReactNode {
               animate={"visible"}
               transition={{ duration: 0.2, delay: 0.8 }}
               className={
-                "mx-auto rounded-2xl shadow-2xl shadow-amber-600 dark:shadow-pink-600 md:h-[30rem] xl:h-[35rem]"
+                "mx-auto rounded-2xl shadow-2xl shadow-amber-600 dark:shadow-pink-600 md:h-120 xl:h-140"
               }>
               <img
                 src={"/hero.webp"}
-                className={"rounded-2xl dark:grayscale md:h-[30rem] xl:h-[35rem]"}
+                className={"rounded-2xl dark:grayscale md:h-120 xl:h-140"}
                 loading={"eager"}
                 alt={"man with dumbell"}
               />

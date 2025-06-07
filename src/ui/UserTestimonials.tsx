@@ -15,7 +15,7 @@ export const UserTestimonials = (): React.ReactNode => {
       className={"md:h-[50vh]"}>
       <h1
         className={
-          "mt-20 bg-gradient-to-br from-amber-800 to-amber-600 bg-clip-text font-bold text-transparent dark:from-slate-200 dark:to-slate-300 xs:text-2xl md:text-6xl lg:text-7xl"
+          "mt-20 bg-linear-to-br from-amber-800 to-amber-600 bg-clip-text font-bold text-transparent dark:from-slate-200 dark:to-slate-300 xs:text-2xl md:text-6xl lg:text-7xl"
         }>
         User Testimonials
       </h1>

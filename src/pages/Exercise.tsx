@@ -32,13 +32,13 @@ const Exercise = () => {
   }
   return (
     <>
-      <div className={"flex max-h-svh pt-[4rem]"}>
+      <div className={"flex max-h-svh pt-16"}>
         {exercise && (
           <div className={"container relative mt-10 h-full w-full overflow-x-hidden"}>
             <div className="mt-16 justify-center gap-5 xs:mx-6 xs:mb-20 md:mb-20 lg:mb-28 lg:grid lg:grid-cols-2">
               <div className="col-span-1 gap-16 border-b border-t border-double border-amber-900 dark:border-pink-500 xs:py-6 md:py-12">
                 <div className="flex flex-col md:gap-4 lg:gap-8">
-                  <h1 className="mb-4 bg-gradient-to-r from-amber-800 to-amber-500 bg-clip-text text-left font-poppins font-bold text-transparent dark:from-pink-500 dark:to-violet-700 xs:text-3xl md:text-4xl xl:text-5xl">
+                  <h1 className="mb-4 bg-linear-to-r from-amber-800 to-amber-500 bg-clip-text text-left font-poppins font-bold text-transparent dark:from-pink-500 dark:to-violet-700 xs:text-3xl md:text-4xl xl:text-5xl">
                     {exercise?.title}
                   </h1>
                   <ExerciseHeaders title={"Target Muscle"} content={exercise?.target} />
@@ -51,7 +51,7 @@ const Exercise = () => {
                 <img
                   loading={"lazy"}
                   alt="exercise gif"
-                  className="rounded-3xl shadow shadow-amber-900/100 drop-shadow-2xl"
+                  className="rounded-3xl shadow-sm shadow-amber-900 drop-shadow-2xl"
                   src={exercise?.gifUrl}
                 />
               </div>
@@ -70,7 +70,7 @@ const Exercise = () => {
                           loading={"lazy"}
                           key={image}
                           src={image}
-                          className="h-[15rem] w-[20rem] rounded-3xl"
+                          className="h-60 w-80 rounded-3xl"
                           alt={"exercise image"}
                         />
                       </div>

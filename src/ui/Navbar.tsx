@@ -45,13 +45,13 @@ export const Navbar = () => {
   return (
     <section
       className={
-        "fixed top-0 z-50 w-full overflow-hidden border-b border-dotted border-b-amber-800 bg-transparent backdrop-blur dark:border-b-gray-800"
+        "fixed top-0 z-50 w-full overflow-hidden border-b border-dotted border-b-amber-800 bg-transparent backdrop-blur-sm dark:border-b-gray-800"
       }>
-      <div className="container flex h-[4rem] w-full items-center justify-between py-4 xs:px-4 sm:px-8">
+      <div className="container flex h-16 w-full items-center justify-between py-4 xs:px-4 sm:px-8">
         <Link to={"/"} className="flex animate-pulse cursor-pointer items-center">
           <img src={"/logo.webp"} className="mr-2 h-8 w-10 rounded-lg" alt={"Body Works logo"} />
           {!showLogoText && (
-            <p className="bg-gradient-to-r from-amber-600 to-amber-500 bg-clip-text font-poppins text-xl font-bold text-transparent transition-all duration-300 ease-in-out dark:bg-gradient-to-r dark:from-pink-500 dark:to-violet-500">
+            <p className="bg-linear-to-r from-amber-600 to-amber-500 bg-clip-text font-poppins text-xl font-bold text-transparent transition-all duration-300 ease-in-out dark:bg-linear-to-r dark:from-pink-500 dark:to-violet-500">
               Works
             </p>
           )}
@@ -94,7 +94,7 @@ export const Navbar = () => {
             ))}
           </div>
         )}
-        <div className="focus:outline-none">
+        <div className="focus:outline-hidden">
           <ModeToggle />
         </div>
       </div>

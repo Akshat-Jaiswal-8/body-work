@@ -7,10 +7,10 @@ export const DataLoadingSkeleton = () => {
     <SectionWrapper>
       <div
         className={cn(
-          "mx-auto mt-16 grid w-full justify-items-center gap-10 lg:grid-cols-2 2xl:max-w-screen-xl 2xl:grid-cols-3",
+          "mx-auto mt-16 grid w-full justify-items-center gap-10 lg:grid-cols-2 2xl:max-w-(--breakpoint-xl) 2xl:grid-cols-3",
         )}>
         {[...Array(6)].map((_, i) => (
-          <Skeleton key={i} className={"h-[21rem] w-72 rounded-2xl"} />
+          <Skeleton key={i} className={"h-84 w-72 rounded-2xl"} />
         ))}
       </div>
     </SectionWrapper>

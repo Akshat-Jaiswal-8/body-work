@@ -46,7 +46,7 @@ export const Features = (): React.ReactNode => {
     <motion.section {...sectionVariants}>
       <h1
         className={
-          "my-10 bg-gradient-to-br from-amber-800 to-amber-600 bg-clip-text py-3 font-bold text-transparent dark:from-slate-200 dark:to-slate-300 xs:text-4xl md:text-6xl lg:text-7xl"
+          "my-10 bg-linear-to-br from-amber-800 to-amber-600 bg-clip-text py-3 font-bold text-transparent dark:from-slate-200 dark:to-slate-300 xs:text-4xl md:text-6xl lg:text-7xl"
         }>
         Body Works at a glance
       </h1>

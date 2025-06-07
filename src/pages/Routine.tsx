@@ -39,7 +39,7 @@ function Routine() {
           <div className="mt-16 grid justify-center gap-5 md:mb-12 lg:mb-28 lg:grid-cols-2">
             <div className="col-span-1 gap-16 border-b border-t border-double border-amber-900 dark:border-pink-500 xs:py-6 md:py-12">
               <div className="flex flex-col md:gap-4 lg:gap-8">
-                <h1 className="mb-4 bg-gradient-to-r from-amber-800 to-amber-500 bg-clip-text py-2 text-left font-poppins font-bold text-transparent dark:from-pink-500 dark:to-violet-700 xs:text-3xl md:text-4xl xl:text-5xl">
+                <h1 className="mb-4 bg-linear-to-r from-amber-800 to-amber-500 bg-clip-text py-2 text-left font-poppins font-bold text-transparent dark:from-pink-500 dark:to-violet-700 xs:text-3xl md:text-4xl xl:text-5xl">
                   {routine.routine.routine_title}
                 </h1>
                 <div className="font-montserrat text-xl font-semibold text-amber-800 dark:text-gray-300">
@@ -52,7 +52,7 @@ function Routine() {
               <img
                 loading={"lazy"}
                 alt="exercise gif"
-                className="rounded-3xl shadow shadow-amber-900/100 drop-shadow-2xl"
+                className="rounded-3xl shadow-sm shadow-amber-900 drop-shadow-2xl"
                 src={routine.routine.routine_imageUrl}
               />
             </div>
@@ -63,7 +63,7 @@ function Routine() {
                 <a
                   href={`/routines/${eachCategory}`}
                   key={eachCategory}
-                  className="my-6 bg-gradient-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent dark:from-pink-600 dark:to-violet-400">
+                  className="my-6 bg-linear-to-r from-amber-800 to-amber-600 bg-clip-text text-transparent dark:from-pink-600 dark:to-violet-400">
                   {eachCategory}
                 </a>
               );

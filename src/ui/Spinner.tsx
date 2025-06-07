@@ -5,7 +5,7 @@ const Spinner = () => {
     <div
       role="status"
       className={cn(
-        "fixed left-1/2 mt-[4rem] -translate-y-1/2 translate-x-[calc(-50%+10rem)] transform",
+        "fixed left-1/2 mt-16 -translate-y-1/2 translate-x-[calc(-50%+10rem)] transform",
       )}>
       <svg
         aria-hidden="true"

@@ -16,7 +16,7 @@ const RoutineCard = ({
 }: IRoutineCardProps) => {
   return (
     <CardContainer className="font-poppins">
-      <CardBody className="group/card scrollbar-hide relative mx-12 mt-10 h-auto w-full max-w-[20rem] overflow-hidden overflow-y-scroll rounded-xl border border-black/[0.2] bg-gray-50 p-6 shadow-lg shadow-amber-900 transition-all duration-300 hover:-translate-y-6 dark:border-gray-800 dark:border-white/[0.2] dark:bg-black dark:shadow-pink-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[30rem]">
+      <CardBody className="group/card scrollbar-hide relative mx-12 mt-10 h-auto w-full max-w-80 overflow-hidden overflow-y-scroll rounded-xl border border-black/[0.2] bg-gray-50 p-6 shadow-lg shadow-amber-900 transition-all duration-300 hover:-translate-y-6 dark:border-gray-800 dark:border-white/[0.2] dark:bg-black dark:shadow-pink-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-120">
         <CardItem translateZ="50" className="text-xl font-bold text-gray-800 dark:text-white">
           {routine_title}
         </CardItem>
